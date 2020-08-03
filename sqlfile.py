@@ -3,10 +3,10 @@ from mysql.connector import Error
 import json
 
 def dbConnection():
-    connection = mysql.connector.connect(host="flasktest.cz00tn1p6lg1.us-east-2.rds.amazonaws.com", 
-                                        database="storemation", 
-                                        user="admin", 
-                                        passwd="password", 
+    connection = mysql.connector.connect(host="rds.amazonaws.com", 
+                                        database="", 
+                                        user="", 
+                                        passwd="", 
                                         auth_plugin='mysql_native_password')
     return connection
 
